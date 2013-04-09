@@ -7,6 +7,6 @@ Pod::Spec.new do |s|
   s.author       = { "Scott Petit" => "petit.scott@gmail.com" }
   s.source       = { :git => "https://github.com/ScottPetit/XOToolKit.git", :tag => "v0.1" }
   s.platform     = :ios, '5.0'
-  s.source_files = 'Classes', '*.{h,m}'
+  s.source_files = 'Classes', '*.{h,m}','**/*.{h,m}'
   s.requires_arc = true
 end

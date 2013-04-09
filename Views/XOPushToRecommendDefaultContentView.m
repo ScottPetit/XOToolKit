@@ -7,6 +7,7 @@
 //
 
 #import "XOPushToRecommendDefaultContentView.h"
+#import "XOToolKit.h"
 
 @interface XOPushToRecommendView()
 

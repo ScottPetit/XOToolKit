@@ -7,6 +7,7 @@
 //
 
 #import "XOSlidingSegue.h"
+#include "XOToolKit.h"
 
 @implementation XOSlidingSegue
 

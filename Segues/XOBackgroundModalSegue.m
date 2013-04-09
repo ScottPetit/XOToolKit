@@ -7,6 +7,7 @@
 //
 
 #import "XOBackgroundModalSegue.h"
+#include "XOToolKit.h"
 #import <QuartzCore/QuartzCore.h>
 
 #define kModalSeguePushedBackAnimationDuration 0.1
