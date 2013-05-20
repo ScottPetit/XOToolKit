@@ -42,25 +42,25 @@
  */
 @property (nonatomic, assign, readonly) CGFloat alpha;
 
-+ (UIColor *)turquoiseColor;
-+ (UIColor *)greenSeaColor;
-+ (UIColor *)emerlandColor;
-+ (UIColor *)nephritisColor;
-+ (UIColor *)peterRiverColor;
-+ (UIColor *)belizeHoleColor;
-+ (UIColor *)amethystColor;
-+ (UIColor *)wisteriaColor;
-+ (UIColor *)wetAsphaltColor;
-+ (UIColor *)midnightBlueColor;
-+ (UIColor *)sunflowerColor;
-+ (UIColor *)tangerineColor;
-+ (UIColor *)carrotColor;
-+ (UIColor *)pumpkinColor;
-+ (UIColor *)alizarinColor;
-+ (UIColor *)pomegranateColor;
-+ (UIColor *)cloudsColor;
-+ (UIColor *)silverColor;
-+ (UIColor *)concreteColor;
-+ (UIColor *)asbestosColor;
++ (UIColor *)flatTurquoiseColor;
++ (UIColor *)flatGreenSeaColor;
++ (UIColor *)flatEmerlandColor;
++ (UIColor *)flatNephritisColor;
++ (UIColor *)flatPeterRiverColor;
++ (UIColor *)flatBelizeHoleColor;
++ (UIColor *)flatAmethystColor;
++ (UIColor *)flatWisteriaColor;
++ (UIColor *)flatWetAsphaltColor;
++ (UIColor *)flatMidnightBlueColor;
++ (UIColor *)flatSunflowerColor;
++ (UIColor *)flatOrangeColor;
++ (UIColor *)flatCarrotColor;
++ (UIColor *)flatPumpkinColor;
++ (UIColor *)flatAlizarinColor;
++ (UIColor *)flatPomegranateColor;
++ (UIColor *)flatCloudsColor;
++ (UIColor *)flatSilverColor;
++ (UIColor *)flatConcreteColor;
++ (UIColor *)flatAsbestosColor;
 
 @end
