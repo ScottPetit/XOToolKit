@@ -12,4 +12,6 @@
 
 - (BOOL)isNotKindOfClass:(Class)class;
 
+- (instancetype)tap:(void (^)(id x))block;
+
 @end

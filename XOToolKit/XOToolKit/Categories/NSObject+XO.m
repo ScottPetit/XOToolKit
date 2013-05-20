@@ -12,7 +12,18 @@
 
 - (BOOL)isNotKindOfClass:(Class)class
 {
-    return ![self isKndOfClass:class];
+    return ![self isKindOfClass:class];
+}
+
+- (instancetype)tap:(void (^)(id))block
+{
+    NSParameterAssert(block);
+    if (!block)
+    {
+        return nil;
+    }
+    block(self);
+    return self;
 }
 
 @end
