@@ -10,7 +10,7 @@
 
 @interface NSString (XO)
 
-- (NSString *)reverse;
-+ (NSString *)camelCaseStringForComponents:(NSArray *)components;
+- (NSString *)xo_reverse;
++ (NSString *)xo_camelCaseStringForComponents:(NSArray *)components;
 
 @end

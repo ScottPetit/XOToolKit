@@ -21,9 +21,9 @@ char *NewBase64Encode(
 
 @interface NSData (XO)
 
-+ (NSData *)dataFromBase64String:(NSString *)aString;
-- (NSString *)base64EncodedString;
++ (NSData *)xo_dataFromBase64String:(NSString *)aString;
+- (NSString *)xo_base64EncodedString;
 
-- (NSString *)base64EncodedStringWithSeparateLines:(BOOL)separateLines;
+- (NSString *)xo_base64EncodedStringWithSeparateLines:(BOOL)separateLines;
 
 @end

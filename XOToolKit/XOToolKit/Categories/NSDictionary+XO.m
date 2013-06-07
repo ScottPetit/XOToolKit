@@ -10,7 +10,7 @@
 
 @implementation NSDictionary (XO)
 
-- (id)objectForKeyOrNil:(id)key
+- (id)xo_objectForKeyOrNil:(id)key
 {
     id value = [self objectForKey:key];
     if ([value isEqual:[NSNull null]])

@@ -10,8 +10,8 @@
 
 @interface NSObject (XO)
 
-- (BOOL)isNotKindOfClass:(Class)class;
+- (BOOL)xo_isNotKindOfClass:(Class)class;
 
-- (instancetype)tap:(void (^)(id x))block;
+- (instancetype)xo_tap:(void (^)(id x))block;
 
 @end

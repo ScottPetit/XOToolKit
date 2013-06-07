@@ -13,20 +13,19 @@
 //
 // Returns the object at index 0 of the given array if it exists
 // If the array is empty it returns nil
-- (id)firstObject;
-
+- (instancetype)xo_firstObject;
 
 // Example
 // NSObject *randomObject = [self.myArray randomObject];
 //
 // Returns a random object in the given array
 // If the array is empty it returns nil
-- (id)randomObject;
+- (instancetype)xo_randomObject;
 
 // Example
 // NSArray *reversedArray = [array reverse];
 //
 // Returns a reversed array
-- (NSArray *)reverse;
+- (NSArray *)xo_reverse;
 
 @end

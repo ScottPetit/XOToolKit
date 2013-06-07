@@ -20,23 +20,23 @@
     return self.contentOffset.y / self.contentSize.height;
 }
 
-- (void)scrollToTop
+- (void)xo_scrollToTop
 {
-    [self scrollToTopAnimated:NO];
+    [self xo_scrollToTopAnimated:NO];
 }
 
-- (void)scrollToTopAnimated:(BOOL)animated
+- (void)xo_scrollToTopAnimated:(BOOL)animated
 {
     [self setContentOffset:CGPointZero animated:animated];
 }
 
-- (void)scrollToVerticalPercentage:(CGFloat)percentage animated:(BOOL)animated
+- (void)xo_scrollToVerticalPercentage:(CGFloat)percentage animated:(BOOL)animated
 {
     CGPoint scrollOffset = CGPointMake(self.contentOffset.x, self.contentSize.height * percentage);
     [self setContentOffset:scrollOffset animated:animated];
 }
 
-- (void)scrollToHorizontalPercentage:(CGFloat)percentage animated:(BOOL)animated
+- (void)xo_scrollToHorizontalPercentage:(CGFloat)percentage animated:(BOOL)animated
 {
     CGPoint scrollOffset = CGPointMake(self.contentSize.width * percentage, self.contentOffset.y);
     [self setContentOffset:scrollOffset animated:animated];

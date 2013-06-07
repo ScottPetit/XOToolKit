@@ -10,7 +10,7 @@
 
 @implementation NSString (XO)
 
-- (NSString *)reverse
+- (NSString *)xo_reverse
 {
     NSMutableString *mutableString = [NSMutableString string];
     NSInteger charIndex = [self length];
@@ -25,7 +25,7 @@
     return [mutableString copy];
 }
 
-+ (NSString *)camelCaseStringForComponents:(NSArray *)components
++ (NSString *)xo_camelCaseStringForComponents:(NSArray *)components
 {
     NSMutableString *result = [NSMutableString string];
     

@@ -10,6 +10,6 @@
 
 @interface NSDictionary (XO)
 
-- (id)objectForKeyOrNil:(id)key;
+- (id)xo_objectForKeyOrNil:(id)key;
 
 @end

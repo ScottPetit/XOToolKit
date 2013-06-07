@@ -21,7 +21,7 @@
 //
 // returns the autoreleased NSData representation of the base64 string
 //
-+ (NSData *)dataFromBase64String:(NSString *)aString
++ (NSData *)xo_dataFromBase64String:(NSString *)aString
 {
 	NSData *data = [aString dataUsingEncoding:NSASCIIStringEncoding];
 	size_t outputLength;
@@ -40,7 +40,7 @@
 // returns an autoreleased NSString being the base 64 representation of the
 //	receiver.
 //
-- (NSString *)base64EncodedString
+- (NSString *)xo_base64EncodedString
 {
 	size_t outputLength;
 	char *outputBuffer =
@@ -55,7 +55,7 @@
 }
 
 // added by Hiroshi Hashiguchi
-- (NSString *)base64EncodedStringWithSeparateLines:(BOOL)separateLines
+- (NSString *)xo_base64EncodedStringWithSeparateLines:(BOOL)separateLines
 {
 	size_t outputLength;
 	char *outputBuffer =

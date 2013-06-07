@@ -32,7 +32,7 @@
     {
         NSString *normalizedKey = [self normalizedKey:key];
         NSArray *setterComponents = @[@"set", normalizedKey];
-        NSString *setterName = [[NSString camelCaseStringForComponents:setterComponents] stringByAppendingString:@":"];
+        NSString *setterName = [[NSString xo_camelCaseStringForComponents:setterComponents] stringByAppendingString:@":"];
         
         SEL selector = NSSelectorFromString(setterName);
         if ([self respondsToSelector:selector])
@@ -54,7 +54,7 @@
 - (NSString *)normalizedKey:(NSString *)key
 {
     NSArray *components = [key componentsSeparatedByString:@"_"];
-    return [NSString camelCaseStringForComponents:components];
+    return [NSString xo_camelCaseStringForComponents:components];
 }
 
 @end

@@ -10,12 +10,12 @@
 
 @implementation NSObject (XO)
 
-- (BOOL)isNotKindOfClass:(Class)class
+- (BOOL)xo_isNotKindOfClass:(Class)class
 {
     return ![self isKindOfClass:class];
 }
 
-- (instancetype)tap:(void (^)(id))block
+- (instancetype)xo_tap:(void (^)(id))block
 {
     NSParameterAssert(block);
     if (!block)

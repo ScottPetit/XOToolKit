@@ -10,7 +10,7 @@
 
 @implementation NSArray (XO)
 
-- (id)firstObject
+- (instancetype)xo_firstObject
 {
     if (self.count == 0)
     {
@@ -20,7 +20,7 @@
     return [self objectAtIndex:0];
 }
 
-- (id)randomObject
+- (instancetype)xo_randomObject
 {
     if (self.count == 0)
     {
@@ -30,7 +30,7 @@
     return [self objectAtIndex:arc4random_uniform(self.count)];
 }
 
-- (NSArray *)reverse
+- (NSArray *)xo_reverse
 {
     return [[self reverseObjectEnumerator] allObjects];
 }
