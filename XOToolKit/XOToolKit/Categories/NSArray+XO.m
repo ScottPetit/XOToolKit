@@ -10,7 +10,7 @@
 
 @implementation NSArray (XO)
 
-- (instancetype)xo_firstObject
+- (id)xo_firstObject
 {
     if (self.count == 0)
     {
@@ -20,7 +20,7 @@
     return [self objectAtIndex:0];
 }
 
-- (instancetype)xo_randomObject
+- (id)xo_randomObject
 {
     if (self.count == 0)
     {
