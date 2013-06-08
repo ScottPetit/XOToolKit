@@ -37,4 +37,8 @@
 //StoreKit
 #import "XOStoreManager.h"
 
+//DataSources
+#import "XOCollectionViewDataSource.h"
+#import "XOTableViewDataSource.h"
+
 #endif

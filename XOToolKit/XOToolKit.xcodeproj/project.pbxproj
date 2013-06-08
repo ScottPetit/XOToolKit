@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5126CD9117625E7000C53C29 /* XOCollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5126CD9017625E7000C53C29 /* XOCollectionViewDataSource.m */; };
+		5126CD941762622100C53C29 /* XOTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5126CD931762622100C53C29 /* XOTableViewDataSource.m */; };
 		513685CE1735A6610005FA7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513685CD1735A6610005FA7D /* Foundation.framework */; };
 		513685D31735A6610005FA7D /* XOToolKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 513685D21735A6610005FA7D /* XOToolKit.h */; };
 		513686031735A68E0005FA7D /* NSArray+XO.m in Sources */ = {isa = PBXBuildFile; fileRef = 513685DD1735A68D0005FA7D /* NSArray+XO.m */; };
@@ -42,6 +44,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5126CD8F17625E7000C53C29 /* XOCollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XOCollectionViewDataSource.h; sourceTree = "<group>"; };
+		5126CD9017625E7000C53C29 /* XOCollectionViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XOCollectionViewDataSource.m; sourceTree = "<group>"; };
+		5126CD921762622100C53C29 /* XOTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XOTableViewDataSource.h; sourceTree = "<group>"; };
+		5126CD931762622100C53C29 /* XOTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XOTableViewDataSource.m; sourceTree = "<group>"; };
 		513685CA1735A6610005FA7D /* libXOToolKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libXOToolKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		513685CD1735A6610005FA7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		513685D11735A6610005FA7D /* XOToolKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XOToolKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -94,6 +100,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5126CD8E17625E5200C53C29 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				5126CD8F17625E7000C53C29 /* XOCollectionViewDataSource.h */,
+				5126CD9017625E7000C53C29 /* XOCollectionViewDataSource.m */,
+				5126CD921762622100C53C29 /* XOTableViewDataSource.h */,
+				5126CD931762622100C53C29 /* XOTableViewDataSource.m */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
 		513685C11735A6610005FA7D = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				513685D21735A6610005FA7D /* XOToolKit.h */,
+				5126CD8E17625E5200C53C29 /* DataSources */,
 				513685DB1735A68D0005FA7D /* Categories */,
 				513685EA1735A68D0005FA7D /* Model */,
 				513685EF1735A68D0005FA7D /* Segues */,
@@ -286,6 +304,8 @@
 				513686111735A68E0005FA7D /* XOPullToRefreshView.m in Sources */,
 				513686121735A68E0005FA7D /* XOPushToRecommendDefaultContentView.m in Sources */,
 				513686131735A68E0005FA7D /* XOPushToRecommendView.m in Sources */,
+				5126CD9117625E7000C53C29 /* XOCollectionViewDataSource.m in Sources */,
+				5126CD941762622100C53C29 /* XOTableViewDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +408,7 @@
 				513685DA1735A6610005FA7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
