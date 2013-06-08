@@ -85,4 +85,17 @@
     return [XOUtility isPortrait] ? [XOUtility screenWidth] : [XOUtility screenHeight];
 }
 
+#pragma mark - Directories
+
++ (NSString *)applicationDocumentsDirectoryPath
+{
+	return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
+												NSUserDomainMask,
+												YES) lastObject];
+}
++ (NSString *)applicationDocumentsDirectoryPathAppended:(NSString *)pathToAppend
+{
+	return [[XOUtility applicationDocumentsDirectoryPath] stringByAppendingPathComponent:pathToAppend];
+}
+
 @end

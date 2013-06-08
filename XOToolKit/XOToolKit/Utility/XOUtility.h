@@ -60,4 +60,8 @@
 + (CGFloat)actualScreenHeight;
 + (CGFloat)actualScreenWidth;
 
+//Directory
++ (NSString *)applicationDocumentsDirectoryPath;
++ (NSString *)applicationDocumentsDirectoryPathAppended:(NSString *)pathToAppend;
+
 @end
