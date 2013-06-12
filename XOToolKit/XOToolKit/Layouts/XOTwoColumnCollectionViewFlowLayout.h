@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XOTwoColumnCollectionViewFlowLayout : UICollectionViewLayout 
+@interface XOTwoColumnCollectionViewFlowLayout : UICollectionViewFlowLayout
 
 @end
