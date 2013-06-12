@@ -12,6 +12,7 @@
 @interface XOTwoColumnCollectionViewFlowLayout()
 
 @property (nonatomic) NSInteger cellWidth;
+@property (nonatomic) NSInteger numberOfItems;
 
 @end
 
@@ -23,7 +24,25 @@ static NSInteger const kCollectionViewCellMargin = 8;
 {
     [super prepareLayout];
     
-    self.cellWidth = (CGRectGetWidth(self.collectionView.frame) / 2) - (3 * kCollectionViewCellMargin);
+    self.cellWidth = (CGRectGetWidth(self.collectionView.frame) / 2) - (1.5 * kCollectionViewCellMargin);
+    
+    for (int i = 0; i < [self.collectionView numberOfSections]; i++)
+    {
+        self.numberOfItems += [self.collectionView numberOfItemsInSection:i];
+    }
+}
+
+- (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
+{
+    NSArray *layoutAttributes = [super layoutAttributesForElementsInRect:rect];
+    
+    for (UICollectionViewLayoutAttributes *attributes in layoutAttributes)
+    {
+        NSIndexPath *indexPath = attributes.indexPath;
+        attributes.frame = [self layoutAttributesForItemAtIndexPath:indexPath].frame;
+    }
+    
+    return layoutAttributes;
 }
 
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -37,6 +56,12 @@ static NSInteger const kCollectionViewCellMargin = 8;
     layoutAttributes.frame = CGRectMake(minX, minY, self.cellWidth, self.cellWidth);
     
     return layoutAttributes;
+}
+
+- (CGSize)collectionViewContentSize
+{
+    CGSize contentSize = CGSizeMake(CGRectGetWidth(self.collectionView.frame), (self.cellWidth + kCollectionViewCellMargin) * (self.numberOfItems / 2) + kCollectionViewCellMargin);
+    return contentSize;
 }
 
 @end
